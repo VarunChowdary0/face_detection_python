@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>matches</title>
+    <style>
+        .imagio{
+            width: 200px;
+            height: 300px;
+        }
+        .block{
+            display:  flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="">
+        <div class="block">
+            
+        </div>
+    </div>
+    <script>
+        const Arr = ['22951A0512','22951A0514','22951A0518',
+        '22951A0519','22951A0522','22951A0527','22951A0538',
+        '22951A0540','22951A0557','22951A0564','22951A0565',
+        '22951A0566','22951A0570','22951A0586','22951A0598',
+        '22951A05A7','22951A05B2','22951A05B3','22951A05B7',
+        '22951A05B8','22951A05C2','22951A05C7','22951A05D4',
+        '22951A05E0','22951A05E6','22951A05E9','22951A05F0',
+        '22951A05F5','22951A05F9','22951A05G3','22951A05G7',
+        '22951A05G8','22951A05H1','22951A05H8','22951A05J0',
+        '22951A05J2','22951A05J3','22951A05J7','22951A05J8',
+        '22951A05K1','22951A05M5','22951A05N1','22951A05N2',
+        '22951A05N4','22951A05N9','22951A05P0','22951A05P1',
+        '22951A05P9']
+        for(i=0;i<Arr.length;i++){
+            document.querySelector(".block").innerHTML+=`<img class="imagio" src="https://iare-data.s3.ap-south-1.amazonaws.com/uploads/STUDENTS/${Arr[i]}/${Arr[i]}.jpg" alt="${Arr[i]}">`;
+        }
+    </script>
+</body>
+</html>
